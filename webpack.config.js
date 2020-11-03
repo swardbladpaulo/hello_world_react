@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-module.exportsj = {
+module.exports = {
   entry: "./src/index.js",
   mode: "development",
   module: {
