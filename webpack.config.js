@@ -11,7 +11,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        options: { presents: ["@babel/env"] },
+        options: { presets: ["@babel/env"] },
       },
       {
         test: /\.css$/,
@@ -22,7 +22,7 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist",
+    publicPath: "/dist/",
     filename: "bundle.js",
   },
   devServer: {
